@@ -1,0 +1,26 @@
+<!--pages/detail/childComponents/x-param-info/x-param-info.wxml-->
+<view class="param-info">
+  <!-- 尺寸 -->
+  <view class="szie">
+    <block wx:for="{{paramInfo.sizes}}" wx:for-index="index1" wx:for-item="item1" wx:key="index1">
+      <view class="szie-table">
+        <block wx:for="{{item1}}" wx:for-index="index2" wx:for-item="item2" wx:key="index2">
+          <view class="size-row row">
+            <block wx:for="{{item2}}" wx:for-index="index3" wx:for-item="item3" wx:key="index3">
+              <view class="size-item">{{item3}}</view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+  <!-- 信息相关 -->
+  <view class="info">
+    <block wx:for="{{paramInfo.infos}}" wx:key="index">
+      <view class="info-row row">
+        <view class="info-key">{{item.key}}</view>
+        <view class="info-value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>

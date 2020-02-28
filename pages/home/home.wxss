@@ -1,0 +1,23 @@
+/* pages/home/home.wxss */
+
+
+/* page {
+  height: 100%;
+}
+
+.home {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+}
+
+.tab-control-temp {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  background: #fff;
+} */

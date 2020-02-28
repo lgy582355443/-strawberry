@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "x-swiper": "/components/x-swiper/x-swiper",
+    "x-base-info": "./childComponents/x-base-info/x-base-info",
+    "x-shop-info": "./childComponents/x-shop-info/x-shop-info",
+    "x-detail-info": "./childComponents/x-detail-info/x-detail-info",
+    "x-param-info": "./childComponents/x-param-info/x-param-info"
+  }
+}

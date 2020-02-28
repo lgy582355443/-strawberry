@@ -1,0 +1,11 @@
+/* components/x-goods-list/x-goods-list.wxss */
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.goods-item {
+  width: 45%;
+}

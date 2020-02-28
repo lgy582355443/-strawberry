@@ -1,0 +1,75 @@
+/* pages/detail/childComponents/x-shop-info/x-shop-info.wxss */
+
+.shop-info {
+  padding: 20rpx;
+  border-bottom: 15px solid #f8f8f8;
+}
+
+.title-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left text {
+  font-size: 36rpx;
+}
+
+.logo {
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 30rpx;
+}
+
+.comeShop {
+  padding: 15rpx 10rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(to bottom right, rgb(255, 51, 0), rgb(255, 153, 0));
+  color: #ffff;
+}
+
+.sell-info {
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count-info {
+  padding-right: 40rpx;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #8d8d8d;
+}
+
+.grade-info {
+  flex: 1;
+}
+
+.grade-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grade-row .name {
+  color: #8d8d8d;
+}
+
+.good {
+  color: #ff5777;
+}
+
+.less {
+  color: #5ea732;
+}

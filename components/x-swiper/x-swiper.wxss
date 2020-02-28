@@ -1,0 +1,10 @@
+/* compoments/x-swiper/x-swiper.wxss */
+
+
+.swiper {
+  height: 360rpx;
+}
+
+.swiper-image{
+  width: 100%;
+}

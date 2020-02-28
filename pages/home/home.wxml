@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+
+  <!-- <view hidden='{{!showTabControl}}'>
+    <x-tap-control class="tab-control-temp" bind:tabclick="tabclick" titles="{{titles}}" />
+  </view>
+
+  <scroll-view class="content" scroll-y="true" scroll-with-animation="true" scroll-top="{{topPosition}}" bindscroll="scrollPosition"> -->
+  
+    <x-swiper images="{{banner}}" />
+    <x-recommend recommends="{{recommend}}" />
+    <x-tap-control class="tab-control" bind:tabclick="tabclick" titles="{{titles}}" />
+    <x-goods-list goodsList="{{goods[currentType].list}}" />
+    <x-back-top bind:tap="backTop" />
+  <!-- </scroll-view> -->
+
+</view>

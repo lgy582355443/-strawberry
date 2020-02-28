@@ -1,0 +1,26 @@
+/* pages/detail/childComponents/x-param-info/x-param-info.wxss */
+
+.param-info {
+  padding: 15rpx;
+}
+
+.row {
+  display: flex;
+  padding: 15rpx 0;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+
+.size-item {
+  flex: 1;
+  color: #9b9b9b;
+}
+
+.info-key {
+  flex: 1;
+  color: #9b9b9b;
+}
+
+.info-value {
+  flex: 2;
+  color: #f55777;
+}

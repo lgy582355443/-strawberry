@@ -1,0 +1,74 @@
+/* pages/detail/childComponents/x-base-info/x-base-info.wxss */
+
+.base-info {
+  padding: 16rpx;
+  margin-top: 10rpx;
+  border-bottom: 15px solid #f8f8f8;
+}
+
+.title {
+  font-size: 36rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.price-info {
+  margin: 16rpx 0;
+}
+
+.new-price {
+  color: #ff5001;
+  font-size: 40rpx;
+}
+
+.old-price {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  text-decoration: line-through;
+}
+
+.discount {
+  background: #ff5777;
+  color: #fff;
+  margin-left: 16rpx;
+  padding: 4rpx 6rpx;
+  font-size: 30rpx;
+  border-radius: 16rpx;
+  position: relative;
+  bottom: 12rpx;
+}
+
+.sell-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  padding-bottom: 15rpx;
+}
+
+.sell-item {
+  color: #9b9b9b;
+}
+
+.service {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  font-size: 24rpx;
+}
+
+.service-item {
+  flex: 0 0 30%;
+  text-align: center;
+  margin: 5rpx;
+  color: #9b9b9b;
+}
+
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+}
