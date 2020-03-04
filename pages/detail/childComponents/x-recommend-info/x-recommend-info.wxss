@@ -1,0 +1,10 @@
+/* pages/detail/childComponents/x-recommend-info/x-recommend-info.wxss */
+
+.recommend {
+  padding: 10rpx 0;
+}
+
+.header {
+  font-size: 40rpx;
+  margin: 10rpx;
+}

@@ -1,15 +1,15 @@
-// components/x-goods-list/x-goods-list.js
+// components/x-checkbox/x-cheakbox.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    goodsList: {
-      type: Array,
-      value: []
+    isChecked: {
+      type: Boolean,
+      value: false
     }
   },
-
+  externalClasses: ["icon"],
   /**
    * 组件的初始数据
    */
@@ -22,5 +22,5 @@ Component({
    */
   methods: {
 
-  },
+  }
 })

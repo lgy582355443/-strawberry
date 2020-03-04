@@ -1,12 +1,11 @@
-// components/x-goods-list/x-goods-list.js
+// pages/detail/childComponents/x-comment-info/x-comment-info.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    goodsList: {
-      type: Array,
-      value: []
+    commentInfo: {
+      type: Object
     }
   },
 
@@ -22,5 +21,5 @@ Component({
    */
   methods: {
 
-  },
+  }
 })

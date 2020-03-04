@@ -6,6 +6,8 @@ import {
   ShopInfo,
   ParamInfo
 } from '../../server/detail.js';
+const app = getApp();
+
 Page({
 
   /**
@@ -29,26 +31,24 @@ Page({
     this.setData({
       iid: options.iid
     })
-    const {
-      topImages,
-      baseInfo,
-      shopInfo,
-      detailInfo,
-      paramInfo,
-      commentInfo
-    } = wx.getStorageSync('detail');
-    if (topImages) {
-      this.setData({
-        topImages,
-        baseInfo,
-        shopInfo,
-        detailInfo,
-        paramInfo,
-        commentInfo
-      })
-    } else {
-      this._getDetailData();
-    }
+    this._getDetailData();
+    this._getRecommends();
+  },
+
+  onAddCart() {
+    const goods = {};
+    goods.iid = this.data.iid;
+    goods.imageURL = this.data.topImages[0];
+    goods.title = this.data.baseInfo.title;
+    goods.desc = this.data.baseInfo.desc;
+    goods.price = this.data.baseInfo.realPrice;
+
+    // 2.加入到购物车列表
+    app.addToCart(goods)
+    // 3.加入成功提示
+    wx.showToast({
+      title: '加入购物车成功',
+    })
   },
 
   _getDetailData() {
@@ -86,13 +86,12 @@ Page({
         paramInfo,
         commentInfo
       })
-      wx.setStorageSync('detail', {
-        topImages,
-        baseInfo,
-        shopInfo,
-        detailInfo,
-        paramInfo,
-        commentInfo
+    })
+  },
+  _getRecommends() {
+    getRecommends().then(res => {
+      this.setData({
+        recommends: res.data.list
       })
     })
   },

@@ -13,7 +13,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor":"#ff5777",
+    "selectedColor": "#ff5777",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -41,6 +41,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

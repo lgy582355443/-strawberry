@@ -1,0 +1,6 @@
+/* components/x-checkbox/x-cheakbox.wxss */
+
+.check-icon {
+  border: 2px solid #cccc;
+  border-radius: 20px;
+}

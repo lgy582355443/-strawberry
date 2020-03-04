@@ -4,5 +4,8 @@
   <x-base-info baseInfo="{{baseInfo}}" />
   <x-shop-info shopInfo="{{shopInfo}}" />
   <x-detail-info detailInfo="{{detailInfo}}" />
-  <x-param-info paramInfo="{{paramInfo}}"/>
+  <x-param-info paramInfo="{{paramInfo}}" />
+  <x-comment-info commentInfo="{{commentInfo}}" />
+  <x-recommend-info recommends="{{recommends}}" />
+  <x-bottom-bar bind:addcart="onAddCart"/>
 </view>

@@ -1,0 +1,7 @@
+<!--pages/detail/childComponents/x-recommend-info/x-recommend-info.wxml-->
+<view class='recommend'>
+  <view class='header'>商品推荐</view>
+  <view class='content'>
+    <x-goods-list goodsList="{{recommends}}" />
+  </view>
+</view>

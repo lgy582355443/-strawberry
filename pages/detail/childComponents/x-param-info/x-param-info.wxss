@@ -2,6 +2,7 @@
 
 .param-info {
   padding: 15rpx;
+  border-bottom: 20rpx solid #f2f2f2;
 }
 
 .row {

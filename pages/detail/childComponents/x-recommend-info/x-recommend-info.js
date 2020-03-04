@@ -1,12 +1,11 @@
-// components/x-goods-list/x-goods-list.js
+// pages/detail/childComponents/x-recommend-info/x-recommend-info.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    goodsList: {
-      type: Array,
-      value: []
+    recommends: {
+      type: Array
     }
   },
 
@@ -21,6 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-  },
+   
+}
 })

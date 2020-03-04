@@ -4,6 +4,9 @@
     "x-base-info": "./childComponents/x-base-info/x-base-info",
     "x-shop-info": "./childComponents/x-shop-info/x-shop-info",
     "x-detail-info": "./childComponents/x-detail-info/x-detail-info",
-    "x-param-info": "./childComponents/x-param-info/x-param-info"
+    "x-param-info": "./childComponents/x-param-info/x-param-info",
+    "x-comment-info": "./childComponents/x-comment-info/x-comment-info",
+    "x-recommend-info": "./childComponents/x-recommend-info/x-recommend-info",
+    "x-bottom-bar": "./childComponents/x-bottom-bar/x-bottom-bar"
   }
 }

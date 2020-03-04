@@ -1,6 +1,9 @@
 /* pages/detail/detail.wxss */
 
+.detail {
+  margin-bottom: 121rpx;
+}
+
 .detail-swiper swiper {
   height: 800rpx;
 }
-

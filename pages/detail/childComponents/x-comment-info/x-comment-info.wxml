@@ -1,0 +1,26 @@
+<!--pages/detail/childComponents/x-comment-info/x-comment-info.wxml-->
+<view class="comment-info">
+  <view class="header">
+    <view class="title-left">
+      <view class="liner"></view> 评价</view>
+    <view>更多</view>
+  </view>
+  <view class="comment">
+    <view class="user">
+      <image src="{{commentInfo.user.avatar}}" />
+      <text>{{commentInfo.user.uname}}</text>
+    </view>
+    <view class="desc">
+      {{commentInfo.content}}
+    </view>
+    <view class='other-info'>
+      <text class='time'>{{commentInfo.created}}</text>
+      <text class='style'>{{commentInfo.style}}</text>
+    </view>
+    <view class='picture'>
+      <block wx:for="{{commentInfo.images}}" wx:key="index">
+        <image src="{{item}}" mode="widthFix" />
+      </block>
+    </view>
+  </view>
+</view>

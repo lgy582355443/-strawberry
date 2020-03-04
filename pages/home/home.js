@@ -37,25 +37,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    const {
-      banner,
-      recommend
-    } = wx.getStorageSync('multiData')
-    const productData = wx.getStorageSync('productData')
-    if (banner && productData) {
-      console.log(productData);
-
-      this.setData({
-        banner,
-        recommend,
-        goods: productData
-      })
-    } else {
-      this._getMultiData();
-      this._getProductData(POP);
-      this._getProductData(NEW);
-      this._getProductData(SELL);
-    }
+    this._getMultiData();
+    this._getProductData(POP);
+    this._getProductData(NEW);
+    this._getProductData(SELL);
   },
 
   //切换类型
@@ -99,13 +84,6 @@ Page({
         banner,
         recommend: res.data.recommend.list
       })
-      wx.setStorage({
-        key: 'multiData',
-        data: {
-          banner,
-          recommend: res.data.recommend.list
-        },
-      })
     })
   },
 
@@ -123,7 +101,6 @@ Page({
       this.setData({
         goods
       })
-      wx.setStorageSync('productData', this.data.goods)
     })
   },
 
@@ -135,11 +112,11 @@ Page({
 
   //scroll-view滚动
   // scrollPosition(e) {
-    // wx.createSelectorQuery().select('.tab-control').boundingClientRect((rect) => {
-    //   const show = rect.top > 0
-    //   this.setData({
-    //     showTabControl: !show
-    //   })
-    // }).exec()
+  // wx.createSelectorQuery().select('.tab-control').boundingClientRect((rect) => {
+  //   const show = rect.top > 0
+  //   this.setData({
+  //     showTabControl: !show
+  //   })
+  // }).exec()
   // }
 })

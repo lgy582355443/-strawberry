@@ -62,7 +62,6 @@
 
 .service-item {
   flex: 0 0 30%;
-  text-align: center;
   margin: 5rpx;
   color: #9b9b9b;
 }
@@ -70,5 +69,5 @@
 .icon {
   width: 30rpx;
   height: 30rpx;
-  margin: 0 10rpx;
+  margin-right: 10rpx;
 }

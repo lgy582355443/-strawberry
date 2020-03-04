@@ -1,6 +1,7 @@
 /* components/x-goods-list/x-goods-list.wxss */
 
 .goods-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
