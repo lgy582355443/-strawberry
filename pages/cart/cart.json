@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-car-bar": "./childComponents/x-car-bar/x-car-bar",
+    "x-car-item": "./childComponents/x-car-item/x-car-item"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-checkbox":"/components/x-checkbox/x-checkbox"
+  }
+}

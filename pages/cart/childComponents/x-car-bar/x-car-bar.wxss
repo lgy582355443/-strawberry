@@ -1,0 +1,42 @@
+/* pages/cart/childComponents/x-car-bar/x-car-bar.wxss */
+
+.car-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #cccc;
+}
+
+.check-box {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  box-shadow: 0 0 20rpx #cccc;
+  margin: 0 20rpx;
+}
+
+.counter {
+  flex: 5;
+  font-size: 36rpx;
+}
+
+.payment {
+  flex: 3;
+  font-size: 36rpx;
+  padding: 10rpx;
+  margin-right:20rpx; 
+  border-radius:30rpx;
+  background-color: rgb(255, 51, 0);
+  text-align:center;
+  color:#fff;
+}

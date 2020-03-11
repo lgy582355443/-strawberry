@@ -1,0 +1,11 @@
+<!--pages/cart/childComponents/x-car-bar/x-car-bar.wxml-->
+<view class="car-bar">
+  <view class='check-box'>
+    <x-checkbox icon="icon" isChecked="{{selectedAll}}" bindtap="onSelectAll" />
+    <view>全选</view>
+  </view>
+  <view class='counter'>
+    总计: ¥{{price}}
+  </view>
+  <view class='payment'>去计算({{counter}})</view>
+</view>

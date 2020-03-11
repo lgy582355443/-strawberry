@@ -1,0 +1,21 @@
+<!--pages/cart/childComponents/x-car-item/x-car-item.wxml-->
+<view class="car-item">
+  <view class='item-icon'>
+    <x-checkbox bindtap='onCheckClick' isChecked="{{goods.checked}}" />
+  </view>
+  <view class="item-image">
+    <image src="{{goods.imageURL}}" mode='aspectFill'></image>
+  </view>
+  <view class="item-info">
+    <view class="item-title">{{goods.title}}</view>
+    <view class="item-desc">{{goods.desc}}</view>
+    <view class="price-count">
+      <view class="price">￥{{goods.price}}</view>
+      <view class="count-box">
+        <view class="cupt-item sub {{goods.count==1?'one-count':''}}" bindtap="countSub">-</view>
+        <view class="count">{{goods.count}}</view>
+        <view class="cupt-item add" bindtap="countAdd">+</view>
+      </view>
+    </view>
+  </view>
+</view>

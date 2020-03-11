@@ -1,0 +1,13 @@
+/* pages/cart/cart.wxss */
+
+page {
+  height: 100%;
+}
+
+.car {
+  height: 100%;
+}
+
+.car-list {
+  height: calc(100% - 90rpx);
+}

@@ -1,0 +1,75 @@
+/* pages/cart/childComponents/x-car-item/x-car-item.wxss */
+
+.car-item {
+  display: flex;
+  padding: 15rpx;
+  border-bottom: 2rpx solid #cccc;
+}
+
+.item-icon {
+  display: flex;
+  align-items: center;
+}
+
+.item-image image {
+  width: 180rpx;
+  height: 240rpx;
+  border-radius: 16rpx;
+  margin: 0 10rpx;
+}
+
+.item-info {
+  flex: 1;
+  width: 500rpx;
+}
+
+.item-title {
+  margin: 20rpx 0;
+  font-size: 34rpx;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-desc {
+  margin-bottom: 70rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.count-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price {
+  color: #ff5777;
+  font-size: 40rpx;
+}
+
+.count {
+  width: 80rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background-color: #cccc;
+}
+
+.cupt-item {
+  font-size: 30rpx;
+  font-weight: bolder;
+  padding: 10rpx 20rpx;
+}
+
+.one-count {
+  color: #cccc;
+}

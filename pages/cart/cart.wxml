@@ -1,0 +1,13 @@
+<!--pages/cart/cart.wxml-->
+<view class="car">
+  <scroll-view class="car-list" scroll-y>
+    <block wx:for="{{carList}}" wx:key="iid">
+      <x-car-item goods="{{item}}" 
+      index="{{index}}" 
+      bind:onCheckClick="onCheckClick" 
+      bind:countSub="countSub"
+      bind:countAdd="countAdd"/>
+    </block>
+  </scroll-view>
+  <x-car-bar selectedAll="{{isSelectAll}}" price="{{totalPrice}}" counter="{{totalCounter}}" bind:onSelectAll="onSelectAll" />
+</view>
