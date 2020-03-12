@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "profile-header": "./childComponents/profile-header/profile-header",
+    "x-info": "./childComponents/x-info/x-info",
+    "x-list-view": "./childComponents/x-list-view/x-list-view"
+  }
+}

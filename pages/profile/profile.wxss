@@ -1,0 +1,13 @@
+/* pages/profile/profile.wxss */
+
+.profile {
+  height: 100%;
+}
+
+button::after {
+  border: none;
+}
+
+.weui-btn {
+  background-color: #fff;
+}

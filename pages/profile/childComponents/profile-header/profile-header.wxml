@@ -1,0 +1,16 @@
+<!--pages/profile/childComponents/profile-header/profile-header.wxml-->
+<view class='header'>
+  <view class='avatar'>
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/assets/images/profile/avatar.png'}}" />
+  </view>
+  <view class='login-info'>
+    <button wx:if="{{!userInfo.nickName}}" open-type="getUserInfo" bindgetuserinfo="getuserinfo" class='login'>登录</button>
+    <view wx:else class="user-name">{{userInfo.nickName}}</view>
+    <view class='phone'>
+      <image src="/assets/images/profile/phone.png" /> 暂无绑定手机号
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src="/assets/images/common/arrow-right.png" />
+  </view>
+</view>

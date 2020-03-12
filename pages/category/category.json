@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-menu": "./childComponents/x-menu/x-menu",
+    "x-content": "./childComponents/x-content/x-content"
+  }
+}
